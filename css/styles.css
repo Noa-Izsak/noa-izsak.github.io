@@ -10951,7 +10951,7 @@ p.lead {
   font-size: 3rem;
 }
 
-section.Noa-Izsak {
+section.resume-section {
   display: flex;
   align-items: center;
   padding-left: 1rem;
@@ -10960,17 +10960,17 @@ section.Noa-Izsak {
   padding-bottom: 5rem;
   max-width: 75rem;
 }
-section.Noa-Izsak .Noa-Izsak-content {
+section.resume-section .resume-section-content {
   width: 100%;
 }
 
 @media (min-width: 768px) {
-  section.Noa-Izsak {
+  section.resume-section {
     min-height: 100vh;
   }
 }
 @media (min-width: 992px) {
-  section.Noa-Izsak {
+  section.resume-section {
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 5rem;
