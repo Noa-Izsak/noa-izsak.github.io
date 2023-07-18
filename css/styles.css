@@ -7008,6 +7008,7 @@ textarea.form-control-lg {
 
 .d-block {
   display: block !important;
+  
 }
 
 .d-grid {
@@ -8040,12 +8041,12 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: #031273 !important;
 }
 
 .text-secondary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+  color: #031273 !important;
 }
 
 .text-success {
