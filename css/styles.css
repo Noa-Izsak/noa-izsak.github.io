@@ -7350,6 +7350,7 @@ textarea.form-control-lg {
 
 .flex-grow-1 {
   flex-grow: 1 !important;
+  /*font-size: 16px;*/
 }
 
 .flex-shrink-0 {
@@ -10900,6 +10901,10 @@ p.lead {
     flex-direction: column;
     width: 17rem;
     height: 100vh;
+    /*fadding transition of teh side bar */ /*background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));*/
+    /*background: linear-gradient(to right, rgba(0, 0, 0, 1), transparent);*/
+    /*background: linear-gradient(to right, rgba(0, 0, 25, 1), transparent);*/
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 120, 0.05)); /*Note, fading color*/
   }
   #sideNav .navbar-brand {
     display: flex;
@@ -10907,9 +10912,10 @@ p.lead {
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
+    max-width: 10.5rem;
+    max-height: 10.5rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    
   }
   #sideNav .navbar-collapse {
     display: flex;
