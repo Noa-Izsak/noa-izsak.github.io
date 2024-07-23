@@ -7664,6 +7664,10 @@ textarea.form-control-lg {
   margin-bottom: 0 !important;
   text-transform: none;
 }
+.mb-0-1 {
+  margin-bottom: 0.25rem !important;
+  text-transform: none;
+}
 
 .mb-1 {
   margin-bottom: 0.25rem !important;
@@ -7683,6 +7687,11 @@ textarea.form-control-lg {
 
 .mb-5 {
   margin-bottom: 3rem !important;
+  text-transform: none;
+}
+
+.mb-5-1 {
+  margin-bottom: 1rem !important;
   text-transform: none;
 }
 
@@ -10977,8 +10986,8 @@ p.lead {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 3.25rem;
+  width: 3.25rem;
   background-color: #495057;
   color: #fff;
   border-radius: 100%;
@@ -11111,7 +11120,10 @@ section.resume-section .resume-section-content {
   background-color: #c82333;
 }
 
+
+
 /* Citation button styling */
+
 .citation-button {
   display: inline-block;
   margin-left: 10px;
@@ -11128,4 +11140,140 @@ section.resume-section .resume-section-content {
 
 .citation-button:hover {
   background-color: #c5ccef;
+}
+
+
+
+/**Back to main page button**/
+
+.button-back {
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bolder;
+  background-color: #edeef5;
+  color: #03106b;
+  border: 2px solid #03106b;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button-back:hover {
+  background-color: #c5ccef;
+}
+
+
+
+/** News**/
+
+.news-container {
+  float: right; /* Position the news section to the right */
+  width: 22%; /* Adjust the width as desired */
+  margin-left: 30px;
+}
+
+.news-item {
+  margin-bottom: 20px; /* Add spacing between news items */
+  position: relative; /* Required for positioning the timeline */
+  /*margin-left: 20px;*/
+}
+
+.news-text {
+  font-style: inherit;
+  font-weight: lighter;
+}
+
+.timeline {
+  position: absolute;
+  top: 0;
+  left: -10px; /* Adjust the position of the timeline */
+  width: 2px; /* Width of the line */
+  height: 100%; /* Extend the line to the bottom */
+  background: linear-gradient(to bottom, transparent, #999); /* Faded line */
+}
+
+.date {
+  font-weight: bold;
+}
+
+.read-more {
+  color: #0000FF; /* Customize link color */
+}
+
+/* Add bullet points */
+.news-item::before {
+  content: "•"; /* Bullet point character */
+  position: absolute;
+  top: 10%; /* Position vertically in the middle */
+  left: -13px; /* Adjust the position of the bullet point */
+  transform: translateY(-50%); /* Center vertically */
+  font-size: 14px; /* Adjust size as needed */
+  color: #999; /* Color of the bullet point */
+}
+
+/** Summary section **/
+
+section.summary-section {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-width: 75rem;
+}
+section.summary-section .summary-section-content {
+  width: 20%;
+}
+
+@media (min-width: 768px) {
+  section.summary-section {
+    min-height: 100vh;
+  }
+}
+@media (min-width: 992px) {
+  section.summary-section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+
+/** All News**/
+
+.all-news-container {
+  float: left; /* Position the news section to the right */
+  width: 100%; /* Adjust the width as desired */
+  margin-left: 60px;
+}
+
+.all-news-item {
+  margin-bottom: 20px; /* Add spacing between news items */
+  position: relative; /* Required for positioning the timeline */
+  /*margin-left: 20px;*/
+}
+
+.all-timeline {
+  position: absolute;
+  top: 0;
+  left: -10px; /* Adjust the position of the timeline */
+  width: 2px; /* Width of the line */
+  height: 100%; /* Extend the line to the bottom */
+  background: linear-gradient(to bottom, transparent, #999); /* Faded line */
+}
+
+
+.all-news-item::before {
+  content: "•"; /* Bullet point character */
+  position: absolute;
+  top: 10%; /* Position vertically in the middle */
+  left: -13px; /* Adjust the position of the bullet point */
+  transform: translateY(-50%); /* Center vertically */
+  font-size: 14px; /* Adjust size as needed */
+  color: #999; /* Color of the bullet point */
 }
