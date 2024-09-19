@@ -8,11 +8,16 @@
         <meta name="author" content="" />
         <title>Noa Izsak</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Include Academicons -->
+        <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWleJdy/qqpC4cAa9rOGUstPomptquNWT9wdPEn2fk" crossorigin="anonymous">
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <!----->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.14.0/css/devicon.min.css">
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -32,6 +37,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publication">Publications</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -42,220 +48,222 @@
                         Noa Izsak
                         <span class="text-primary"></span>
                     </h1>
-                    <div class="subheading mb-5">
-                        <a href="mailto:">izsak@post.bgu.ac.il</a>
+                    <div class="lead mb-5">
+                        <a href="javascript:void(0);" onclick="openGmailWithFallback()" class="contact-link" >izsak@post.bgu.ac.il</a>
                     </div>
-                    <p class="lead mb-5">Ph.D. student at the <a href="https://in.bgu.ac.il/en/natural_science/cs" target="_blank" style="text-decoration: none !important;">Computer Science Department</a> at <a href="https://www.bgu.ac.il/" target="_blank" style="text-decoration: none !important;"> Ben-Gurion University of the Negev</a>.<br>
+                    <p class="lead mb-5 custom-line-height">
+                        Ph.D. student at the <a href="https://in.bgu.ac.il/en/natural_science/cs" target="_blank" style="text-decoration: none !important;">Computer Science Department</a> at <a href="https://www.bgu.ac.il/" target="_blank" style="text-decoration: none !important;">Ben-Gurion University of the Negev</a>.<br>
                         Research areas: Learning/Grammatical Inference, Verification and Concurrent/Parameterized Systems.<br>
-<!--                        Advisors: <a href="https://www.cs.bgu.ac.il/~dana/" target="_blank" style="text-decoration: none !important;">Prof. Dana Fisman</a> and <a href="https://swenjacobs.github.io/" target="_blank" style="text-decoration: none !important;">Dr. Swen Jacobs</a>.</p>-->
-                        Advisor: <a href="https://www.cs.bgu.ac.il/~dana/" target="_blank" style="text-decoration: none !important;">Prof. Dana Fisman</a>.</p>
-                    <div class="social-icons"> <!--<adding social icons ref>-->
+                        Advisor: <a href="https://www.cs.bgu.ac.il/~dana/" target="_blank" style="text-decoration: none !important;">Prof. Dana Fisman</a>.
+                    </p>
+                <div class="social-icons">
 
-                        <a class="social-icon" href="https://www.linkedin.com/in/noa-izsak-a834b82b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="text-decoration: none !important;"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/Noa-Izsak/Learning-Broadcast-Protocols-with-LeoParDS" target="_blank" style="text-decoration: none !important;"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://orcid.org/0009-0004-1333-2490" target="_blank" style="text-decoration: none !important;"><i class="fa-brands fa-orcid"></i></a>
-                        <a class="social-icon" href="https://scholar.google.co.il/citations?hl=iw&user=DXDw47EAAAAJ" target="_blank" style="text-decoration: none !important;"><i class="fas fa-book"></i></a>
+                    <a class="social-icon" href="https://www.linkedin.com/in/noa-izsak-a834b82b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="text-decoration: none !important;"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="social-icon" href="https://github.com/Noa-Izsak/Learning-Broadcast-Protocols-with-LeoParDS" target="_blank" style="text-decoration: none !important;"><i class="fab fa-github"></i></a>
+                    <a class="social-icon" href="https://scholar.google.co.il/citations?hl=iw&user=DXDw47EAAAAJ" target="_blank" style="text-decoration: none !important;"><i class="fas fa-book"></i></a>
 
-                    </div>
                 </div>
+                </div>
+                <body onload="setInitialButtonText()">
+                <button class="news-toggle" onclick="toggleNews()"></button>
                 <div class="news-container">
                     <h3 class="mb-0-1">Recent News</h3>
                     <div class="all-news-item">
                         <div class="timeline"></div>
-                        <p class="date">July 2024</p>
-                        <p>Dean’s List Award Recipient, M.Sc. in Computer Science.</p>
-                        <a href="https://www.linkedin.com/posts/noa-izsak-a834b82b7_i-am-proud-to-share-that-i-have-graduated-activity-7220486005865205760-xynX?utm_source=share&utm_medium=member_desktop" class="read-more fw-bold" target="_blank" style="text-decoration: none !important;">Read more</a>
+                        <p class="date">September 2024</p>
+                        <p>Presenting at Highlights of Logic, Games and Automata 2024.</p>
+                        <a href="#" class="open-popup">Watch My Talk</a>
+
+                        <!-- Load the popup HTML -->
+                        <div id="popup-container"></div>
+
+                        <!-- Include the JavaScript to handle the popup behavior -->
+                        <script src="js/popup.js"></script>
                     </div>
                     <a href="news.html" class="fw-bold">Read all news</a>
                 </div>
+                </body>
             </section>
             <hr class="m-0" />
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+
+                    <div class="education-item d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Ph.D. Computer Science</h3>
                             <div class="subheading mb-3">Ben-Gurion University of the Negev</div>
-                            <div>Advisor: <a href="https://www.cs.bgu.ac.il/~dana/" target="_blank" style="text-decoration: none !important;">Prof. Dana Fisman</a>.</div>
+                            <div>Advisor: <a href="https://www.cs.bgu.ac.il/~dana/" target="_blank" class="advisor-link">Prof. Dana Fisman</a>.</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2024 - 2028 (expected)</span></div>
+                        <div class="flex-shrink-0">
+                            <span class="text-primary">2024 - 2028 (expected)</span>
+                        </div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+
+                    <div class="education-item d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">M.Sc. Computer Science</h3>
-                            <h3 class="subheading mb-1">Summa Cum Laude</h3>
+                            <h4 class="subheading mb-1 highlight">Summa Cum Laude</h4>
                             <div class="subheading mb-3">Ben-Gurion University of the Negev</div>
-                            <div>Advisors: <a href="https://www.cs.bgu.ac.il/~dana/" target="_blank" style="text-decoration: none !important;">Prof. Dana Fisman</a> and <a href="https://swenjacobs.github.io/" target="_blank" style="text-decoration: none !important;">Dr. Swen Jacobs</a>.</div>
+                            <div>Advisors:
+                                <a href="https://www.cs.bgu.ac.il/~dana/" target="_blank" class="advisor-link">Prof. Dana Fisman</a> and
+                                <a href="https://swenjacobs.github.io/" target="_blank" class="advisor-link">Dr. Swen Jacobs</a>.
+                            </div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2022 - 2023</span></div>
+                        <div class="flex-shrink-0">
+                            <span class="text-primary">2022 - 2023</span>
+                        </div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
+
+                    <div class="education-item d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">B.Sc. Software Engineering</h3>
-                            <h3 class="subheading mb-1">Cum Laude</h3>
+                            <h4 class="subheading mb-1 highlight">Cum Laude</h4>
                             <div class="subheading mb-3">Ben-Gurion University of the Negev</div>
-                            <div>Meitar Program - Honors Program for Fast Track M.Sc </div>
+                            <div>Meitar Program - Honors Program for Fast Track M.Sc</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2019 - 2023</span></div>
+                        <div class="flex-shrink-0">
+                            <span class="text-primary">2019 - 2023</span>
+                        </div>
                     </div>
                 </div>
             </section>
             <hr class="m-0" />
+            <!-- Publications Section -->
             <section class="resume-section" id="publication">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Publications</h2>
+
+                    <!-- new paper -->
+<!--                    <div>-->
+<!--                        <ul class="fa-ul mb-0">-->
+<!--                            <li>-->
+<!--                                <span class="fa-li"><i class="fas fa-book"></i></span>-->
+<!--                                <p class="lead md-5" style="display: flex; justify-content: space-between; align-items: center;">-->
+<!--                    <span>-->
+<!--                        <b>Your Paper Title Here</b>-->
+<!--                    </span>-->
+<!--                                </p>-->
+<!--                                <div style="display: inline-block;">-->
+<!--                                    <p class="text-body m-md-0" style="font-weight: normal; line-height: 1.8;">-->
+<!--                                        <b>Your Conference/Journal Name</b><br />-->
+<!--                                        Your Author Names-->
+<!--                                    </p>-->
+<!--                                </div>-->
+<!--                                <p class="fw-semibold link-info" style="line-height: 1.8; margin-top: 10px;">-->
+<!--                                    [<a href="YourPaper.pdf"><i class="fa fa-download"></i>&nbsp;Paper</a>]&nbsp;-->
+<!--                                    [<a href="javascript:void(0);" onclick="showYourNewPaperCitation();" style="text-decoration: none !important;"><i class="fas fa-quote-right"></i>&nbsp;Cite</a>]&nbsp;-->
+<!--                                    [<a href="YourCodeRepositoryLink" class="icon-link" target="_blank" style="text-decoration: none !important;"><i class="fab fa-github"></i>&nbsp;Code</a>]-->
+<!--                                </p>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                    <br>-->
+                    <!-- Learning Broadcast Protocols with LeoParDS (ATVA 2024) -->
                     <div>
                         <ul class="fa-ul mb-0">
                             <li>
                                 <span class="fa-li"><i class="fas fa-book"></i></span>
-                                <p class="lead md-5">
-                                    <a href="/Learning Broadcast Protocols with LeoParDS-ATVA.pdf" target="_blank" style="font-weight: bold; text-decoration: none !important;">Learning Broadcast Protocols with LeoParDS</a>
-                                    <span style="font-weight: normal;">(with D. Fisman, S. Jacobs) accepted for publication at ATVA'24.</span>
-                                    <span class="citation-button" onclick="showLeoParDSCitation()">BibTeX</span>
+                                <p class="lead md-5" style="display: flex; justify-content: space-between; align-items: center;">
+                            <span>
+                                <b>Learning Broadcast Protocols with LeoParDS</b>
+                            </span>
                                 </p>
-                                <p class="fw-semibold link-info"> <a href="https://zenodo.org/doi/10.5281/zenodo.10968037" class="icon-link" target="_blank" style="text-decoration: none !important;"> LeoParDS : Zenodo link </a> &emsp; ~ &emsp;
-                                    <a href="https://github.com/Noa-Izsak/Learning-Broadcast-Protocols-with-LeoParDS" class="icon-link" target="_blank" style="text-decoration: none !important;"> LeoParDS : GitHub link </a> &emsp;&emsp; <img src="Badges/artifact%20functional.PNG" alt="Tool Icon" style="width: 60px; height: 60px;">&emsp;<img src="Badges/artifact available.PNG" alt="Tool Icon" style="width: 60px; height: 60px;">
-                                    <br>
+                                <div style="display: inline-block;">
+                                    <p class="text-body m-md-0" style="font-weight: normal; line-height: 1.8;">
+                                        <b>Accepted for publication at ATVA'24</b><br />
+                                        Noa Izsak, Dana Fisman and Swen Jacobs
+                                    </p>
+                                </div>
+                                <div class="badge-container" style="display: inline-block; vertical-align: top; margin-left: 2px;">
+                                    <img src="Badges/atva-available.png" alt="Badge 1" class="badge-img" style="height: 55px; width: auto; margin-right: 2px;" />
+                                    <img src="Badges/atva-functional.png" alt="Badge 2" class="badge-img" style="height: 55px; width: auto;" />
+                                </div>
+                                <p class="fw-semibold link-info" style="line-height: 1.8; margin-top: 10px;">
+                                    [<a href="/Learning Broadcast Protocols with LeoParDS-ATVA.pdf"><i class="fa fa-download"></i>&nbsp;Paper</a>]&nbsp;
+                                    [<a href="javascript:void(0);" onclick="showLeoParDSCitation();" style="text-decoration: none !important;"><i class="fas fa-quote-right"></i>&nbsp;Cite</a>]&nbsp;
+                                    [<a href="https://github.com/Noa-Izsak/Learning-Broadcast-Protocols-with-LeoParDS" class="icon-link" target="_blank" style="text-decoration: none !important;"><i class="fab fa-github"></i>&nbsp;Code</a>]
                                 </p>
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <ul class="fa-ul mb-0">
-                            <li>
-                                <span class="fa-li"><i class="fas fa-book"></i></span>
-                                <p class="lead md-5">
-                                    <a href="/Learning Broadcast Protocols AAAI'24  Vol. 38 No. 11.pdf" target="_blank" style="font-weight: bold; text-decoration: none !important;">Learning Broadcast Protocols</a>
-                                    <span style="font-weight: normal;">(with D. Fisman, S. Jacobs), in AAAI 2024.</span>
-                                    <span class="citation-button" onclick="showAAAI2024Citation()">BibTeX</span>
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Overlay to detect clicks outside the pop-up -->
-                    <div id="overlay" class="overlay"></div>
-
-                    <!-- Citation container for Learning Broadcast Protocols with LeoParDS -->
-                    <div id="leopards-citation-container" class="citation-container">
-                        <div class="citation-header">BibTeX:</div>
-                        <div id="leopards-citation-content" class="citation-content">
-                            <strong>
-@inproceedings{izsak2024learningleopards,
-title={Learning Broadcast Protocols with LeoParDS},
-author={Izsak, Noa and Fisman, Dana and Jacobs, Swen},
-booktitle={Proceedings of the ATVA Conference},
-year={2024}
-}
-                            </strong>
-                        </div>
-                        <button class="copy-button" onclick="copyLeoParDSCitation()">Copy Citation</button>
-                        <button class="close-button" onclick="closeLeoParDSCitation()">Close</button>
-                        <div id="copy-leopards-success-msg" class="copy-success-msg"></div> <!-- New div for copy success message -->
-                    </div>
-
-                    <!-- Citation container for Learning Broadcast Protocols AAAI'24 -->
-                    <div id="aaai2024-citation-container" class="citation-container">
-                        <div class="citation-header">BibTeX:</div>
-                        <div id="aaai2024-citation-content" class="citation-content">
-                            <strong>
-@inproceedings{fisman2024learning,
-title={Learning Broadcast Protocols},
-author={Fisman, Dana and Izsak, Noa and Jacobs, Swen},
-booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-volume={38},
-number={11},
-pages={12016--12023},
-year={2024}
-}
-                            </strong>
-                        </div>
-                        <button class="copy-button" onclick="copyAAAI2024Citation()">Copy Citation</button>
-                        <button class="close-button" onclick="closeAAAI2024Citation()">Close</button>
-                        <div id="copy-aaai2024-success-msg" class="copy-success-msg"></div> <!-- New div for copy success message -->
-                    </div>
-
-                    <script>
-                        function showLeoParDSCitation() {
-                            document.getElementById('leopards-citation-container').style.display = 'block';
-                            document.getElementById('overlay').style.display = 'block';
-                        }
-
-                        function closeLeoParDSCitation() {
-                            document.getElementById('leopards-citation-container').style.display = 'none';
-                            document.getElementById('overlay').style.display = 'none';
-                        }
-
-                        function copyLeoParDSCitation() {
-                            const citation = document.getElementById('leopards-citation-content').innerText;
-                            navigator.clipboard.writeText(citation).then(() => {
-                                document.getElementById('copy-leopards-success-msg').innerText = 'BibTeX citation copied to clipboard!';
-                                setTimeout(function() {
-                                    document.getElementById('copy-leopards-success-msg').innerText = '';
-                                }, 2500); // Clear message after 2.5 seconds
-                            }).catch(err => {
-                                console.error('Failed to copy citation: ', err);
-                            });
-                        }
-
-                        function showAAAI2024Citation() {
-                            document.getElementById('aaai2024-citation-container').style.display = 'block';
-                            document.getElementById('overlay').style.display = 'block';
-                        }
-
-                        function closeAAAI2024Citation() {
-                            document.getElementById('aaai2024-citation-container').style.display = 'none';
-                            document.getElementById('overlay').style.display = 'none';
-                        }
-
-                        function copyAAAI2024Citation() {
-                            const citation = document.getElementById('aaai2024-citation-content').innerText;
-                            navigator.clipboard.writeText(citation).then(() => {
-                                document.getElementById('copy-aaai2024-success-msg').innerText = 'BibTeX citation copied to clipboard!';
-                                setTimeout(function() {
-                                    document.getElementById('copy-aaai2024-success-msg').innerText = '';
-                                }, 2500); // Clear message after 2.5 seconds
-                            }).catch(err => {
-                                console.error('Failed to copy citation: ', err);
-                            });
-                        }
-
-                        // Close the citation pop-ups when clicking outside of them
-                        window.onclick = function(event) {
-                            const leoParDSContainer = document.getElementById('leopards-citation-container');
-                            const aaai2024Container = document.getElementById('aaai2024-citation-container');
-                            const overlay = document.getElementById('overlay');
-                            if (event.target == overlay) {
-                                closeLeoParDSCitation();
-                                closeAAAI2024Citation();
-                            }
-                        };
-                    </script>
-                <br>
-                <h3 class="mb-0">Presentations at Conferences and Seminars</h3>
                     <br>
+
+                    <!-- Learning Broadcast Protocols (AAAI 2024) -->
                     <div>
                         <ul class="fa-ul mb-0">
                             <li>
-                                <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>
-                                <p class="lead md-5"> The Association for the Advancement of Artificial Intelligence (AAAI) 2024.
-                                    <br>
+                                <span class="fa-li"><i class="fas fa-book"></i></span>
+                                <p class="lead md-5" style="display: flex; justify-content: space-between; align-items: center; ">
+                            <span>
+                                <b>Learning Broadcast Protocols</b>
+                            </span>
+                                </p>
+                                <div style="display: inline-block;">
+                                    <p class="text-body m-md-0" style="font-weight: normal; line-height: 1.8;">
+                                        <b>AAAI'24</b><br />
+                                        Dana Fisman, Noa Izsak and Swen Jacobs
+                                    </p>
+                                </div>
+                                <p class="fw-semibold link-info" style="line-height: 1.8; margin-top: 10px;">
+                                    [<a href="/Learning Broadcast Protocols AAAI'24  Vol. 38 No. 11.pdf"><i class="fa fa-download"></i>&nbsp;Paper</a>]&nbsp;
+                                    [<a href="javascript:void(0);" onclick="showAAAI2024Citation();" style="text-decoration: none !important;"><i class="fas fa-quote-right"></i>&nbsp;Cite</a>]&nbsp;
+                                    [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/29089" class="icon-link" target="_blank" style="text-decoration: none !important;">Proceedings</a>]
                                 </p>
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <ul class="fa-ul mb-0">
-                            <li>
-                                <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>
-                                <p class="lead md-5"> Conducting a departmental seminar in a Seminar on Formal Methods, Ben-Gurion University of the Negev 2023.
-                                    <br>
-                                </p>
-                            </li>
-                        </ul>
+                <br>
+                    <h3 class="mb-0">Presentations at Conferences and Seminars</h3>
+                    <br>
+                    <ul class="fa-ul presentations-list mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>
+
+                            <p class="lead md-5" style="line-height: 1.8; margin-top: 10px;">
+                            Highlights of Logic, Games, and Automata 2024.
+                                <span class="fw-semibold link-info">[<a href="#" class="open-popup"> Watch My Talk</a>]</span>
+                            </p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>
+                            <p class="lead md-5">
+                                The Association for the Advancement of Artificial Intelligence (AAAI) 2024.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>
+                            <p class="lead md-5">
+                                Conducting a departmental seminar in a Seminar on Formal Methods, Ben-Gurion University of the Negev 2023.
+                            </p>
+                        </li>
+                    </ul>
+            </div>
+        </section>
+
+            <!-- Overlay to detect clicks outside the pop-up -->
+            <div id="overlay" class="overlay"></div>
+
+            <!-- Citation Container -->
+            <div id="citation-container" class="citation-container">
+                <div class="citation-header">
+                    <div class="citation-style-bar">
+                        <!-- Citation styles will be dynamically updated based on the paper selected -->
+                        <button onclick="showCitation('leopards', 'bibtex')" class="active">BibTeX</button>
+                        <button onclick="showCitation('leopards', 'ieee')">IEEE</button>
+                        <button onclick="showCitation('leopards', 'acm')">ACM</button>
+                        <button onclick="showCitation('leopards', 'apa')">APA</button>
                     </div>
                 </div>
-            </section>
+                <div id="citation-content-display" class="citation-content">
+                    <!-- Citation content will appear here dynamically -->
+                </div>
+                <button class="copy-button" onclick="copyCitation()">Copy Citation</button>
+                <button class="close-button" onclick="closeCitation()">Close</button>
+                <div id="copy-success-msg" class="copy-success-msg"></div> <!-- Div for copy success message -->
+            </div>
+
+<!--            <script src="scripts.js"></script>-->
             <hr class="m-0" />
             <section class="resume-section" id="awards">
                 <div class="resume-section-content">
@@ -270,16 +278,54 @@ year={2024}
                         </ul>
                     </div>
                     <div>
-                       <ul class="fa-ul mb-0">
-                           <li>
-                               <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                               <p class="lead md-5"> 2
-                               <sup>nd</sup>
-                               Place - Ben-Gurion University of the Negev - CS Department Poster Day 2023.</p>
-                           </li>
-                       </ul>
-                   </div>
+                        <ul class="fa-ul mb-0">
+                            <li>
+                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                                <p class="lead md-5"> 2
+                                    <sup>nd</sup>
+                                    Place - Ben-Gurion University of the Negev - CS Department Poster Day 2023.</p>
+                            </li>
+                        </ul>
+                    </div>
                     <!--in old_version.txt-->
+                </div>
+            </section>
+            <hr class="m-0" />
+            <section class="resume-section" id="contact">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Contact Information</h2>
+                    <ul class="fa-ul contact-list mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-envelope" aria-hidden="true"></i></span>
+                            <p class="lead mb-5">
+                                <a href="javascript:void(0);" onclick="openGmailWithFallback()" class="contact-link">Email</a>
+                            </p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fab fa-google"></i></span>
+                            <p class="lead mb-5">
+                                <a href="https://scholar.google.co.il/citations?hl=iw&user=DXDw47EAAAAJ" target="_blank" class="contact-link">Google Scholar</a>
+                            </p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fab fa-orcid"></i></span>
+                            <p class="lead mb-5">
+                                <a href="https://orcid.org/0009-0004-1333-2490" target="_blank" class="contact-link">ORCID</a>
+                            </p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fab fa-github"></i></span>
+                            <p class="lead mb-5">
+                                <a href="https://github.com/Noa-Izsak/Learning-Broadcast-Protocols-with-LeoParDS" target="_blank" class="contact-link">GitHub</a>
+                            </p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fab fa-linkedin"></i></span>
+                            <p class="lead mb-5">
+                                <a href="https://www.linkedin.com/in/noa-izsak-a834b82b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-link">LinkedIn</a>
+                            </p>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </div>
