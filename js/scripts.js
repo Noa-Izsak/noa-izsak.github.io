@@ -93,9 +93,9 @@ const citations = {
         apa: `Izsak, N., Fisman, D., & Jacobs, S. (2024). Learning Broadcast Protocols with LeoParDS. In Proceedings of the ATVA Conference.`
     },
     aaai2024: {
-        bibtex: `@inproceedings{fisman2024learning,\n  title={Learning Broadcast Protocols},\n  author={Fisman, Dana and Izsak, Noa and Jacobs, Swen},\n  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},\n  volume={38},\n  number={11},\n  pages={12016--12023},\n  year={2024}\n}`,
-        ieee: `D. Fisman, N. Izsak, and S. Jacobs, "Learning Broadcast Protocols," in Proceedings of the AAAI Conference on Artificial Intelligence, vol. 38, no. 11, 2024, pp. 12016-12023.`,
-        acm: `Fisman, D., Izsak, N., and Jacobs, S. 2024. Learning Broadcast Protocols. In Proceedings of the AAAI Conference on Artificial Intelligence, vol. 38, no. 11, 12016-12023.`,
+        bibtex: `@inproceedings{fisman2024learning,\n  title={Learning Broadcast Protocols},\n  author={Fisman, Dana and Izsak, Noa and Jacobs, Swen},\n  booktitle={Proceedings of the 38th AAAI Conference on Artificial Intelligence},\n  volume={11},\n  pages={12016--12023},\n  year={2024}\n}`,
+        ieee: `D. Fisman, N. Izsak, and S. Jacobs, "Learning Broadcast Protocols," in Proceedings of the 38th AAAI Conference on Artificial Intelligence, vol. 11, 2024, pp. 12016-12023.`,
+        acm: `Fisman, D., Izsak, N., and Jacobs, S. 2024. Learning Broadcast Protocols. In Proceedings of the 38th AAAI Conference on Artificial Intelligence, vol. 11, 12016-12023.`,
         apa: `Fisman, D., Izsak, N., & Jacobs, S. (2024). Learning Broadcast Protocols. In Proceedings of the AAAI Conference on Artificial Intelligence, 38(11), 12016-12023.`
     }
 };
