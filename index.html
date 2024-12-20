@@ -36,9 +36,11 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publication">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#presentations">Presentations</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                 </ul>
+                <div class="footer-mark" target="_top">© All rights reserved - Noa Izsak</div>
             </div>
         </nav>
         <div class="container-fluid p-0">
@@ -58,9 +60,10 @@
                     </p>
                 <div class="social-icons">
 
-                    <a class="social-icon" href="https://www.linkedin.com/in/noa-izsak-a834b82b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="text-decoration: none !important;"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="social-icon" href="https://github.com/Noa-Izsak/Learning-Broadcast-Protocols-with-LeoParDS" target="_blank" style="text-decoration: none !important;"><i class="fab fa-github"></i></a>
-                    <a class="social-icon" href="https://scholar.google.co.il/citations?hl=iw&user=DXDw47EAAAAJ" target="_blank" style="text-decoration: none !important;"><i class="fas fa-book"></i></a>
+                    <a class="social-icon" href="https://www.linkedin.com/in/noa-izsak-a834b82b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="text-decoration: none !important;"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="social-icon" href="https://github.com/Noa-Izsak/Learning-Broadcast-Protocols-with-LeoParDS" target="_blank" style="text-decoration: none !important;"><i class="fa-brands fa-github"></i></a>
+<!--                    <a class="social-icon" href="https://dblp.org/pid/350/0314" target="_blank" style="text-decoration: none !important;"><i class="ai ai-fw ai-dblp"></i></a>-->
+                    <a class="social-icon" href="https://scholar.google.co.il/citations?hl=iw&user=DXDw47EAAAAJ" target="_blank" style="text-decoration: none !important;"><i class="fa fa-book"></i></a> <!--<i class="ai ai-fw ai-google-scholar"></i></a> --class="fas fa-book">-->
 
                 </div>
                 </div>
@@ -68,11 +71,12 @@
                 <button class="news-toggle" onclick="toggleNews()"></button>
                 <div class="news-container">
                     <h3 class="mb-0-1">Recent News</h3>
+
                     <div class="all-news-item">
                         <div class="timeline"></div>
-                        <p class="date">October 2024</p>
-                        <p>Presenting our paper "Learning Broadcast Protocols with LeoParDS" in ATVA 24, Kyoto, Japan.</p>
-                        <a href="https://www.linkedin.com/posts/noa-izsak-a834b82b7_atva2024-aaai24-atva-activity-7256918860920991745-7eFU?utm_source=share&utm_medium=member_desktop" class="read-more fw-bold" target="_blank" style="text-decoration: none !important;">Read more</a>
+                        <p class="date">December 2024</p>
+                        <p>Presenting at the Israel Verification Day (IVD'24).</p>
+                        <a href="https://www.linkedin.com/posts/noa-izsak-a834b82b7_aaai-atva-activity-7275847323279048704-DR4y?utm_source=share&utm_medium=member_desktop" class="read-more fw-bold" target="_blank" style="text-decoration: none !important;">Read more</a>
                     </div>
                     <a href="news.html" class="fw-bold">Read all news</a>
                 </div>
@@ -207,45 +211,60 @@
                             </li>
                         </ul>
                     </div>
-                <br>
-                    <h3 class="mb-0">Presentations at Conferences and Seminars</h3>
-                    <br>
-                    <ul class="fa-ul presentations-list mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>
+                </div>
 
-                            <p class="lead md-5" style="line-height: 1.8; margin-top: 10px;">
-                                The International Symposium on Automated Technology for Verification and Analysis (ATVA) 2024.
-                            </p>
-                            <!-- Load the popup HTML -->
-                            <div id="popup-container"></div>
-
-                            <!-- Include the JavaScript to handle the popup behavior -->
-                            <script src="js/popup.js"></script>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>
-
-                            <p class="lead md-5" style="line-height: 1.8; margin-top: 10px;">
-                            Highlights of Logic, Games, and Automata 2024.
-                                <span class="fw-semibold link-info">[<a href="#" class="open-popup"> Watch My Talk</a>]</span>
-                            </p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>
-                            <p class="lead md-5">
-                                The Association for the Advancement of Artificial Intelligence (AAAI) 2024.
-                            </p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>
-                            <p class="lead md-5">
-                                Conducting a departmental seminar in a Seminar on Formal Methods, Ben-Gurion University of the Negev 2023.
-                            </p>
-                        </li>
-                    </ul>
-            </div>
+                <hr class="m-0" />
         </section>
+
+            <hr class="m-0" />
+            <section class="resume-section" id="presentations">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Presentations at Conferences and Seminars</h2>
+                <br>
+                <ul class="fa-ul presentations-list mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>
+
+                        <p class="lead md-5" style="line-height: 1.8; margin-top: 10px;">
+                            Israel Verification Day (IVD'24)
+                            <span class="fw-semibold link-info">[<a href="/IVD/BP%20-%20IVD%20Slides%20-%20Final.pdf"><i class="fa fa-download"></i>&nbsp;Presentation</a>]</span>
+                        </p><!-- Load the popup HTML -->
+                        <div id="popup-container"></div>
+
+                        <!-- Include the JavaScript to handle the popup behavior -->
+                        <script src="js/popup.js"></script>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>
+
+                        <p class="lead md-5" style="line-height: 1.8; margin-top: 10px;">
+                            The International Symposium on Automated Technology for Verification and Analysis (ATVA) 2024.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>
+
+                        <p class="lead md-5" style="line-height: 1.8; margin-top: 10px;">
+                            Highlights of Logic, Games, and Automata 2024.
+                            <span class="fw-semibold link-info">[<a href="#" class="open-popup"> Watch My Talk</a>]</span>
+                        </p>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>
+                        <p class="lead md-5">
+                            The Association for the Advancement of Artificial Intelligence (AAAI) 2024.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>
+                        <p class="lead md-5">
+                            Conducting a departmental seminar in a Seminar on Formal Methods, Ben-Gurion University of the Negev 2023.
+                        </p>
+                    </li>
+                </ul>
+        </div>
+                <hr class="m-0" />
+            </section>
 
             <!-- Overlay to detect clicks outside the pop-up -->
             <div id="overlay" class="overlay"></div>

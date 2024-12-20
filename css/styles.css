@@ -31,7 +31,7 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #362179; /* the color of the links*/
+  --bs-link-color: #1313af; /*#362179; /* the color of the links*/
   --bs-link-hover-color: #5d7794;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
@@ -2019,6 +2019,10 @@ progress {
   --bs-navbar-brand-hover-color: #fff;
   --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-nav .nav-link {
+  font-size: 14px; /* Adjust as needed */
 }
 
 .card {
@@ -7231,6 +7235,10 @@ p.lead {
   #sideNav .navbar-collapse .navbar-nav {
     flex-direction: column;
     width: 100%;
+    justify-content: space-around; /* Spread out items */
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item {
     display: block;
@@ -7238,7 +7246,25 @@ p.lead {
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
+  /* Style the footer mark */
+  #sideNav .footer-mark {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: bolder;
+    background-color: #f8f9fa; /* Optional background color */
+    position: fixed;
+    bottom: 0;
+    width: 17rem;
+    /*width: 100%; !* Ensure it spans the width *!*/
+    color: #555; /* Adjust text color */
+  }
 }
+
+
+
+
+
 .social-icons .social-icon {
   display: inline-flex;
   align-items: center;
@@ -7449,7 +7475,7 @@ section.news-section .news-section-content {
 }
 
 .read-more {
-  color: #0000FF; /* Customize link color */
+  color: var(--bs-link-color); /* #0000FF; /* Customize link color */
 }
 
 /* Add bullet points */
@@ -7854,7 +7880,7 @@ footer {
 
 /* Specific styling for links with class 'open-popup' */
 .open-popup {
-  color: #0000FF; /* Customize link color */
+  color: var(--bs-link-color); /*#0000FF; /* Customize link color */
   text-decoration: none; /* Optional: Remove underline if desired */
   font-weight: bold; /* Optional: Make the link bold */
 }
