@@ -1688,6 +1688,14 @@ progress {
   align-items: center;
 }
 
+.footer-mark {
+  padding-top: 4px;
+  font-size: 12px;
+  font-weight: bolder;
+  bottom: 0;
+  color: #ffffff; /* Adjust text color */
+}
+
 .navbar-toggler {
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
   font-size: var(--bs-navbar-toggler-font-size);
@@ -7197,6 +7205,19 @@ p.lead {
   outline-color: #5656d1;
 }
 
+/*footer-mark {*/
+/*  text-align: center;*/
+/*  padding: 10px 0;*/
+/*  font-size: 12px;*/
+/*  font-weight: bolder;*/
+/*  background-color: #f8f9fa; !* Optional background color *!*/
+/*  position: fixed;*/
+/*  bottom: 0;*/
+/*  width: 17rem;*/
+/*  !*width: 100%; !* Ensure it spans the width *!*!*/
+/*  color: #555; !* Adjust text color *!*/
+/*}*/
+
 @media (min-width: 992px) {
   #sideNav {
     padding-left: 0;
@@ -7805,6 +7826,10 @@ footer {
   margin-right: 10px; /* Adjust this value to control spacing between icons and text */
 }
 
+.presentations-list {
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
 
 /* education item */
 .education-item {
