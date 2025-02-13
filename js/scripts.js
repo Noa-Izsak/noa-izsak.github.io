@@ -87,13 +87,13 @@ const citations = {
     // },
     // // Existing papers
     leopards: {
-        bibtex: `@inproceedings{izsak2024learningleopards,\n  title={Learning Broadcast Protocols with LeoParDS},\n  author={Izsak, Noa and Fisman, Dana and Jacobs, Swen},\n  booktitle={Proceedings of the ATVA Conference},\n  year={2024}\n}`,
-        ieee: `N. Izsak, D. Fisman, and S. Jacobs, "Learning Broadcast Protocols with LeoParDS," in Proceedings of the ATVA Conference, 2024.`,
-        acm: `Izsak, N., Fisman, D., and Jacobs, S. 2024. Learning Broadcast Protocols with LeoParDS. In Proceedings of the ATVA Conference, 2024.`,
-        apa: `Izsak, N., Fisman, D., & Jacobs, S. (2024). Learning Broadcast Protocols with LeoParDS. In Proceedings of the ATVA Conference.`
+        bibtex: `@InProceedings{izsak2024learningleopards, \nauthor={Izsak, Noa and Fisman, Dana and Jacobs, Swen}, \ntitle={Learning Broadcast Protocols with LeoParDS}, \nbooktitle={Automated Technology for Verification and Analysis}, \nyear={2025}, \npages={220--234}, \neditor={Akshay, S. and Niemetz, Aina and Sankaranarayanan, Sriram}, \npublisher={Springer Nature Switzerland}, \nisbn={978-3-031-78709-6}\n}`,
+        ieee: `N. Izsak, D. Fisman, and S. Jacobs, "Learning Broadcast Protocols with LeoParDS," in Proceedings of the Automated Technology for Verification and Analysis, S. Akshay, A. Niemetz, and S. Sankaranarayanan, Eds. Springer Nature Switzerland, 2025, pp. 220–234. ISBN: 978-3-031-78709-6.`,
+        acm: `Izsak, N., Fisman, D., and Jacobs, S. 2025. Learning Broadcast Protocols with LeoParDS. In Proceedings of the Automated Technology for Verification and Analysis,, S. Akshay, A. Niemetz, and S. Sankaranarayanan (Eds.). Springer Nature Switzerland, 220–234. ISBN: 978-3-031-78709-6.`,
+        apa: `Izsak, N., Fisman, D., & Jacobs, S. (20245). Learning Broadcast Protocols with LeoParDS. In Proceedings of the Automated Technology for Verification and Analysis  (pp. 220–234). Springer Nature Switzerland. ISBN: 978-3-031-78709-6.`
     },
     aaai2024: {
-        bibtex: `@inproceedings{fisman2024learning,\n  title={Learning Broadcast Protocols},\n  author={Fisman, Dana and Izsak, Noa and Jacobs, Swen},\n  booktitle={Proceedings of the 38th AAAI Conference on Artificial Intelligence},\n  volume={11},\n  pages={12016--12023},\n  year={2024}\n}`,
+        bibtex: `@inproceedings{fisman2024learning, \ntitle={Learning Broadcast Protocols}, \nauthor={Fisman, Dana and Izsak, Noa and Jacobs, Swen}, \nbooktitle={Proceedings of the 38th AAAI Conference on Artificial Intelligence}, \nvolume={11}, \npages={12016--12023}, \nyear={2024}\n}`,
         ieee: `D. Fisman, N. Izsak, and S. Jacobs, "Learning Broadcast Protocols," in Proceedings of the 38th AAAI Conference on Artificial Intelligence, vol. 11, 2024, pp. 12016-12023.`,
         acm: `Fisman, D., Izsak, N., and Jacobs, S. 2024. Learning Broadcast Protocols. In Proceedings of the 38th AAAI Conference on Artificial Intelligence, vol. 11, 12016-12023.`,
         apa: `Fisman, D., Izsak, N., & Jacobs, S. (2024). Learning Broadcast Protocols. In Proceedings of the AAAI Conference on Artificial Intelligence, 38(11), 12016-12023.`
