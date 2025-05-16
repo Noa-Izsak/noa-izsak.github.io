@@ -7975,3 +7975,81 @@ video {
   display: block; /* Ensures it appears on a new line */
   margin-top: 5px; /* Adds some spacing above */
 }
+
+
+/**Info buble**/
+.info-bubble {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid #888;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  font-size: 12px;
+  background-color: #eee;
+  color: #333;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 220px;
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  padding: 8px;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 10;
+  bottom: 125%; /* position above the bubble */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 12px;
+}
+
+.info-bubble:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+/** info section - in News **/
+.info-section {
+  width: 90%;
+  max-width: 800px;
+  font-family: sans-serif;
+}
+
+.section-header {
+  position: relative; /* establishes reference for the button */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* separates title and button */
+  margin-bottom: 10px;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+#backButton {
+  padding: 6px 14px;
+  font-size: 14px;
+  background-color: #362179;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#backButton:hover {
+  background-color: #93b1d2;
+}
