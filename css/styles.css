@@ -3652,9 +3652,9 @@ progress {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
-  padding: 0;
-  color: #fff;
+  width: 5%;
+  padding: 5px;
+  color: #ffffff;
   text-align: center;
   background: none;
   border: 0;
@@ -3670,7 +3670,7 @@ progress {
 .carousel-control-prev:hover, .carousel-control-prev:focus,
 .carousel-control-next:hover,
 .carousel-control-next:focus {
-  color: #fff;
+  color: #66000f;
   text-decoration: none;
   outline: 0;
   opacity: 0.9;
@@ -7444,9 +7444,9 @@ section.resume-section .resume-section-content {
 /** News**/
 
 .news-container {
-  float: right; /* Position the news section to the right */
-  width: 22%; /* Adjust the width as desired */
-  margin-left: 30px;
+  /*float: right; !* Position the news section to the right *!*/
+  width: 60%; /* Adjust the width as desired */
+  /*margin-left: 30px;*/
 }
 
 .news-item {
@@ -7545,6 +7545,11 @@ section.summary-section .summary-section-content {
 .all-news-item {
   margin-bottom: 20px; /* Add spacing between news items */
   position: relative; /* Required for positioning the timeline */
+}
+
+.all-news-item-carousel-item{
+  margin-bottom: 20px; /* Add spacing between news items */
+  padding-left: 20px;
 }
 
 .all-timeline {
@@ -7675,18 +7680,18 @@ section.summary-section .summary-section-content {
     flex-direction: column;
   }
 
-  .news-container {
-    display: none; /* Hide news sidebar on small screens */
-  }
+  /*.news-container {*/
+  /*  display: none; !* Hide news sidebar on small screens *!*/
+  /*}*/
 
 
-  .news-toggle {
-    display: block; /* Show button on small screens */
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    margin-bottom: 0; /* Remove bottom margin for small screens */
-  }
+  /*.news-toggle {*/
+  /*  display: block; !* Show button on small screens *!*/
+  /*  position: absolute;*/
+  /*  top: 70px;*/
+  /*  right: 20px;*/
+  /*  margin-bottom: 0; !* Remove bottom margin for small screens *!*/
+  /*}*/
 }
 
 /* 19-08 addition - personalize links */

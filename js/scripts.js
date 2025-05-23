@@ -55,13 +55,13 @@ function openGmailWithFallback() {
 function setInitialButtonText() {
     const newsSidebar = document.querySelector('.news-container');
     const newsToggleBtn = document.querySelector('.news-toggle');
-    if (window.innerWidth <= 768) {
-        newsSidebar.style.display = 'none';
-        newsToggleBtn.textContent = 'Show News';
-    } else {
+    //if (window.innerWidth <= 768) {
+    //    newsSidebar.style.display = 'none';
+    //    newsToggleBtn.textContent = 'Show News';
+    //} else {
         newsSidebar.style.display = 'block';
         newsToggleBtn.textContent = 'Hide News';
-    }
+   // }
 }
 
 function toggleNews() {
