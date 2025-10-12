@@ -40,13 +40,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function openGmailWithFallback() {
     // Try to open Gmail in a new tab
-    var gmailWindow = window.open("https://mail.google.com/mail/?view=cm&fs=1&to=izsak@post.bgu.ac.il&su=Academic%20Collaboration%20or%20Inquiry", "_blank");
+    var gmailWindow = window.open("https://mail.google.com/mail/?view=cm&fs=1&to=noa.izsak@cispa.de&su=Academic%20Collaboration%20or%20Inquiry", "_blank");
 
     // Set a fallback to mailto after 20 seconds
     setTimeout(function() {
         if (!gmailWindow || gmailWindow.closed || typeof gmailWindow.closed == 'undefined') {
             // Gmail window was blocked or not opened, fallback to mailto
-            window.location.href = "mailto:izsak@post.bgu.ac.il?subject=Academic%20Collaboration%20or%20Inquiry";
+            window.location.href = "mailto:noa.izsak@cispa.de?subject=Academic%20Collaboration%20or%20Inquiry";
         }
     }, 20000); // 20000 milliseconds = 20 seconds
 }

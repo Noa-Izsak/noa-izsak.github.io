@@ -34,22 +34,27 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Noa Izsak</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/Profile-2025-1.jpeg" alt="..." /></span>
+                <span class="d-none d-lg-block">
+                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/Profile-2025-1.jpeg" alt="Portrait of Noa Izsak" />
+                </span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html#research">Research</a></li>
+
+<!--                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html#about">About</a></li>-->
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html#publication">Publications</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html#presentations">Presentations</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html#awards">Awards</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="news.html#news">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html#news">News</a></li>
                 </ul>
                 <div class="footer-mark">© All rights reserved - Noa Izsak</div>
             </div>
         </nav>
+
         <div class="container-fluid p-0">
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
@@ -57,41 +62,52 @@
                         Noa Izsak
                         <span class="text-primary"></span>
                     </h1>
-                    <div class="lead mb-5">
-                        <a href="javascript:void(0);" onclick="openGmailWithFallback()" class="contact-link" >izsak@post.bgu.ac.il</a>
+
+                    <!-- Mail and Info  -->
+                    <div class="lead mb-4" style="white-space: nowrap;">
+                        <a href="mailto:noa.izsak@cispa.de" class="contact-link">noa.izsak@cispa.de</a>
+                        <span class="text-muted"> · Saarbrücken, Germany</span>
                     </div>
-                    <p class="lead mb-5 custom-line-height">
-                        Ph.D. student at the <a href="https://in.bgu.ac.il/en/natural_science/cs" target="_blank" style="text-decoration: none !important;">Computer Science Department</a> at <a href="https://www.bgu.ac.il/" target="_blank" style="text-decoration: none !important;">Ben-Gurion University of the Negev</a>.<br>
-                        Research areas: Learning/Grammatical Inference, Verification and Concurrent/Parameterized Systems.<br>
-                        Advisor: <a href="https://www.cs.bgu.ac.il/~dana/" target="_blank" style="text-decoration: none !important;">Prof. Dana Fisman</a>.
+
+                    <!--  Short Intro  -->
+                    <p class="lead mb-4 custom-line-height">
+                        Doctoral Researcher at the
+                        <a href="https://cispa.de" target="_blank" rel="noopener" style="text-decoration: none !important;">CISPA Helmholtz Center for Information Security</a>
+                        and Ph.D. student at
+                        <a href="https://www.uni-saarland.de/en/home.html" target="_blank" rel="noopener" style="text-decoration: none !important;">Saarland University</a>.
+                        My research focuses on formal methods and verification in distributed and concurrent systems, exploring how learning and grammatical inference can support trustworthy AI.
+                        <a href="about.html#research" rel="noopener" style="text-decoration: none !important;">Read more ›</a>
                     </p>
-<!--                </div>-->
-<!--                    <body onload="setInitialButtonText()">-->
-<!--                    <button class="news-toggle" onclick="toggleNews()"></button>-->
+
+                    <!-- Recent News -->
                     <div class="news-container">
                         <h3 class="mb-0-1">Recent News</h3>
+
                         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
+                                    <div class="all-news-item-carousel-item">
+                                        <p class="date">Oct, 2025</p>
+                                        <p>Started as a Doctoral Researcher at  <a href="https://cispa.de" target="_blank" rel="noopener" style="text-decoration: none !important;">CISPA</a>, a Ph.D. student at Saarland University.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
                                     <div class="all-news-item-carousel-item">
                                         <p class="date">Sep, 2025</p>
                                         <p>Organizing the <a href="https://www.p-ai-fm.com/" target="_blank" style="text-decoration: none !important;">Post-AI FM Workshop (AAAI-26)</a> January, 2026, Singapore.</p>
                                     </div>
                                 </div>
+
                                 <div class="carousel-item">
                                     <div class="all-news-item-carousel-item">
                                         <p class="date">July, 2025</p>
                                         <p>Contributed Talk, <a href="https://automata-wan-2025.univ-lille.fr/" target="_blank" style="text-decoration: none !important;">Automata & WAN 2025</a> Workshop, Lille, France.</p>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="all-news-item-carousel-item">
-                                        <p class="date">May, 2025</p>
-                                        <p>Zabey Award Recipient.</p>
-                                    </div>
-                                </div>
                             </div>
-                        </div>
+
+                        <!-- Controls -->
                         <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
@@ -103,362 +119,247 @@
                     </div>
 
 
-                    <a href="news.html" class="fw-bold">Read all news</a>
-                    </div>
-<!--                    </body>-->
+                    <a href="news.html" class="fw-bold d-inline-block mt-2">Read all news</a>
+                </div>
+            </div>
+        </section>
+        </div>
 
-<!--                    <div class="social-icons">-->
+        <hr class="m-0" />
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Education</h2>
 
-<!--                        <a class="social-icon" href="https://www.linkedin.com/in/noa-izsak-a834b82b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="text-decoration: none !important;"><i class="fa-brands fa-linkedin"></i></a>-->
-<!--                        <a class="social-icon" href="https://github.com/Noa-Izsak/Learning-Broadcast-Protocols-with-LeoParDS" target="_blank" style="text-decoration: none !important;"><i class="fa-brands fa-github"></i></a>-->
-<!--                        &lt;!&ndash;                    <a class="social-icon" href="https://dblp.org/pid/350/0314" target="_blank" style="text-decoration: none !important;"><i class="ai ai-fw ai-dblp"></i></a>&ndash;&gt;-->
-<!--                        <a class="social-icon" href="https://scholar.google.co.il/citations?hl=iw&user=DXDw47EAAAAJ" target="_blank" style="text-decoration: none !important;"><i class="fa fa-book"></i></a> &lt;!&ndash;<i class="ai ai-fw ai-google-scholar"></i></a> &#45;&#45;class="fas fa-book">&ndash;&gt;-->
+                <!-- Ph.D. Saarland (with initial year note) -->
+                <div class="education-item d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Ph.D. in Computer Science</h3>
+                        <div class="subheading">Saarland University</div>
 
-<!--                    </div>-->
-            </section>
-            <hr class="m-0" />
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-
-                    <div class="education-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Ph.D. Computer Science</h3>
-                            <div class="subheading mb-3">Ben-Gurion University of the Negev</div>
-                            <div>Advisor: <a href="https://www.cs.bgu.ac.il/~dana/" target="_blank" class="advisor-link">Prof. Dana Fisman</a>.</div>
+                        <div class="education-meta">
+                            <div>Doctoral Research at <a href="https://cispa.de" target="_blank" rel="noopener">CISPA Helmholtz Center for Information Security</a></div>
+                            <div>Advisor: <a href="https://swenjacobs.github.io/" target="_blank" rel="noopener" class="advisor-link">Dr.-Ing. Swen Jacobs (CISPA)</a></div>
+                            <div>Co-advisor: <a href="https://www.cs.bgu.ac.il/~dana/" target="_blank" rel="noopener" class="advisor-link">Prof. Dana Fisman</a></div>
                         </div>
-                        <div class="flex-shrink-0">
-                            <span class="text-primary">2024 - 2028 (expected)</span>
-                        </div>
-                    </div>
 
-                    <div class="education-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">M.Sc. Computer Science</h3>
-                            <h4 class="subheading mb-1 highlight">Magna Cum Laude</h4>
-                            <div class="subheading mb-3">Ben-Gurion University of the Negev</div>
+                        <p class="education-note">
+                            <em>* Initial doctoral studies (2024–2025) were pursued at Ben-Gurion University of the Negev under Prof. Dana Fisman before joining CISPA/Saarland University.</em>
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="text-primary">2025 – Today</span>
+                    </div>
+                </div>
+
+                <!-- M.Sc. -->
+                <div class="education-item d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">M.Sc. in Computer Science</h3>
+                        <h4 class="subheading mb-1 highlight">Magna Cum Laude</h4>
+                        <div class="subheading">Ben-Gurion University of the Negev</div>
+                        <div class="education-meta">
                             <div>Advisors:
-                                <a href="https://www.cs.bgu.ac.il/~dana/" target="_blank" class="advisor-link">Prof. Dana Fisman</a> and
-                                <a href="https://swenjacobs.github.io/" target="_blank" class="advisor-link">Dr. Swen Jacobs</a>.
+                                <a href="https://www.cs.bgu.ac.il/~dana/" target="_blank" rel="noopener" class="advisor-link">Prof. Dana Fisman</a> and
+                                <a href="https://swenjacobs.github.io/" target="_blank" rel="noopener" class="advisor-link">Dr.-Ing. Swen Jacobs</a>.
                             </div>
                         </div>
-                        <div class="flex-shrink-0">
-                            <span class="text-primary">2022 - 2023</span>
-                        </div>
                     </div>
-
-                    <div class="education-item d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">B.Sc. Software Engineering</h3>
-                            <h4 class="subheading mb-1 highlight">Cum Laude</h4>
-                            <div class="subheading mb-3">Ben-Gurion University of the Negev</div>
-                            <div>Meitar Program - Honors Program for Fast Track M.Sc</div>
-                        </div>
-                        <div class="flex-shrink-0">
-                            <span class="text-primary">2019 - 2023</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Publications Section -->
-            <section class="resume-section" id="publication">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Publications</h2>
-                    <div>
-                        <ul class="fa-ul mb-0">
-                            <li>
-                                <span class="fa-li"><i class="fas fa-book"></i></span>
-                                <p class="lead md-5" style="display: flex; justify-content: space-between; align-items: center;">
-                            <span>
-                                <b>Learning Broadcast Protocols with LeoParDS</b>
-                            </span>
-                                </p>
-                                <div style="display: inline-block;">
-                                    <p class="text-body m-md-0" style="font-weight: normal; line-height: 1.8;">
-                                        <b>ATVA'24</b><br /> <!--Accepted for publication at -->
-                                        Noa Izsak, Dana Fisman and Swen Jacobs
-                                    </p>
-                                </div>
-                                <div class="badge-container" style="display: inline-block; vertical-align: top; margin-left: 2px;">
-                                    <img src="Badges/atva-available.webp" alt="Badge 1" class="badge-img" style="height: 55px; width: auto; margin-right: 2px;" />
-                                    <img src="Badges/atva-functional.webp" alt="Badge 2" class="badge-img" style="height: 55px; width: auto;" />
-                                </div>
-                                <p class="fw-semibold link-info" style="line-height: 1.8; margin-top: 10px;">
-                                    [<a href="/Learning%20Broadcast%20Protocols%20with%20LeoParDS-ATVA.pdf"><i class="fa fa-download"></i>&nbsp;Paper</a>]&nbsp;
-                                    [<a href="javascript:void(0);" onclick="showLeoParDSCitation();" style="text-decoration: none !important;"><i class="fas fa-quote-right"></i>&nbsp;Cite</a>]&nbsp;
-                                    [<a href="https://github.com/Noa-Izsak/Learning-Broadcast-Protocols-with-LeoParDS" class="icon-link" target="_blank" style="text-decoration: none !important;"><i class="fab fa-github"></i>&nbsp;Code</a>]
-                                    [<a href="https://link.springer.com/book/10.1007/978-3-031-78709-6" class="icon-link" target="_blank" style="text-decoration: none !important;">Proceedings</a>]
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <br>
-
-                    <!-- Learning Broadcast Protocols (AAAI 2024) -->
-                    <div>
-                        <ul class="fa-ul mb-0">
-                            <li>
-                                <span class="fa-li"><i class="fas fa-book"></i></span>
-                                <p class="lead md-5" style="display: flex; justify-content: space-between; align-items: center; ">
-                            <span>
-                                <b>Learning Broadcast Protocols</b>
-                            </span>
-                                </p>
-                                <div style="display: inline-block;">
-                                    <p class="text-body m-md-0" style="font-weight: normal; line-height: 1.8;">
-                                        <b>AAAI'24</b><br />
-                                        Dana Fisman, Noa Izsak and Swen Jacobs
-                                    </p>
-                                </div>
-                                <p class="fw-semibold link-info" style="line-height: 1.8; margin-top: 10px;">
-                                    [<a href="/Learning Broadcast Protocols AAAI'24  Vol. 38 No. 11.pdf"><i class="fa fa-download"></i>&nbsp;Paper</a>]&nbsp;
-                                    [<a href="javascript:void(0);" onclick="showAAAI2024Citation();" style="text-decoration: none !important;"><i class="fas fa-quote-right"></i>&nbsp;Cite</a>]&nbsp;
-                                    [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/29089" class="icon-link" target="_blank" style="text-decoration: none !important;">Proceedings</a>]
-                                </p>
-                            </li>
-                        </ul>
+                    <div class="flex-shrink-0">
+                        <span class="text-primary">2022 – 2023</span>
                     </div>
                 </div>
 
-            </section>
-            <hr class="m-0" />
-            <section class="resume-section" id="presentations">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Conference and Seminar Presentations</h2>
-                    <div class="accordion" id="presentationsAccordion">
-
-                        <!-- 2025 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading2025">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2025" aria-expanded="true" aria-controls="collapse2025">
-                                    2025
-                                </button>
-                            </h2>
-                            <div id="collapse2025" class="accordion-collapse collapse show" aria-labelledby="heading2025" data-bs-parent="#presentationsAccordion">
-                                <div class="accordion-body">
-                                    <ul class="fa-ul">
-
-                                        <li class="mb-4">
-                                            <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>
-                                            <a href="https://highlights-conference.org/2025/attend#program" target="_blank" class="event-acronym" title="Highlights of Logic, Games, and Automata 2025">
-                                                Highlights'25
-                                            </a><br>
-                                            <div class="event-details">September 1–5, Saarbrucken, Germany</div>
-                                        </li>
-
-                                        <li class="mb-4">
-                                            <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>
-                                            <a href="https://automata-wan-2025.univ-lille.fr/" target="_blank" class="event-acronym" title="International Workshop on Cellular Automata and Discrete Complex Systems 2025">
-                                                Automata & WAN'25
-                                            </a><br>
-                                            <a href="/AUTOMATA-WAN/Learning%20Global%20Synchronous%20Protocols%20-%20A%20Broadcast%20Automata%20Perspective%20-%20WAN%20-%20pdf.pdf" class="presentation-link" download>
-                                                <i class="fa fa-download"></i> Presentation
-                                            </a>
-                                            <div class="event-details">June 30 – July 4, Lille, France</div>
-                                        </li>
-
-                                        <li>
-                                            <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>
-                                            <a href="https://sites.google.com/view/lealog25" target="_blank" class="event-acronym" title="Workshop on Learning and Logic, CSL 2025">
-                                                LeaLog-CSL'25
-                                            </a><br>
-                                            <div class="event-details">February 10, Amsterdam, Netherlands</div>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 2024 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading2024">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2024" aria-expanded="false" aria-controls="collapse2024">
-                                    2024
-                                </button>
-                            </h2>
-                            <div id="collapse2024" class="accordion-collapse collapse" aria-labelledby="heading2024" data-bs-parent="#presentationsAccordion">
-                                <div class="accordion-body">
-                                    <ul class="fa-ul">
-
-                                        <li class="mb-4">
-                                            <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>
-                                            <a href="https://sites.google.com/view/ivd-2024" target="_blank" class="event-acronym" title="Israel Verification Day">IVD'24</a><br>
-                                            <a href="/IVD/BP%20-%20IVD%20Slides%20-%20Final%20-%20slides.pdf" class="presentation-link" download>
-                                                <i class="fa fa-download"></i> Presentation
-                                            </a>
-                                            <div class="event-details">December 19, Bar-Ilan University, Israel</div>
-                                        </li>
-
-                                        <li class="mb-4">
-                                            <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>
-                                            <a href="https://atva-conference.org/2024/" target="_blank" class="event-acronym" title="International Symposium on Automated Technology for Verification and Analysis 2024">
-                                                ATVA'24
-                                            </a><br>
-                                            <div class="event-details">October 21–24, Kyoto, Japan</div>
-                                        </li>
-
-                                        <li class="mb-4">
-                                            <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>
-                                            <a href="https://highlights-conference.org/2024/program" target="_blank" class="event-acronym" title="Highlights of Logic, Games, and Automata 2024">
-                                                Highlights'24
-                                            </a><br>
-                                            <!-- Load the popup HTML -->
-                                            <div id="popup-container"></div>
-                                            <!-- Include the JavaScript to handle the popup behavior -->
-                                            <script src="js/popup.js"></script>
-                                            <a href="#" class="open-popup">
-                                                <i class="fa fa-video"></i> Watch My Talk
-                                            </a>
-                                            <div class="event-details">September 16–20, Bordeaux, France (virtual participation)</div>
-                                        </li>
-
-                                        <li>
-                                            <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>
-                                            <a href="https://aaai.org/aaai-24-conference/aaai-24-technical-program/" target="_blank" class="event-acronym" title="AAAI Conference on Artificial Intelligence 2024">
-                                                AAAI'24
-                                            </a><br>
-                                            <div class="event-details">February 20–27, Vancouver, Canada</div>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 2023 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading2023">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2023" aria-expanded="false" aria-controls="collapse2023">
-                                    2023
-                                </button>
-                            </h2>
-                            <div id="collapse2023" class="accordion-collapse collapse" aria-labelledby="heading2023" data-bs-parent="#presentationsAccordion">
-                                <div class="accordion-body">
-                                    <ul class="fa-ul">
-                                        <li>
-                                            <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>
-                                            <span class="event-acronym" title="Seminar on Formal Methods, Ben-Gurion University of the Negev">
-                  Seminar, BGU
-                </span><br>
-                                            <div class="event-details">May 24, Be'er-Sheva, Israel</div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
+                <!-- B.Sc. -->
+                <div class="education-item d-flex flex-column flex-md-row justify-content-between mb-0">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">B.Sc. in Software Engineering</h3>
+                        <h4 class="subheading mb-1 highlight">Cum Laude</h4>
+                        <div class="subheading">Ben-Gurion University of the Negev</div>
+                        <div class="education-meta"><div>Meitar – Honors Program for Fast-Track M.Sc.</div></div>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="text-primary">2019 – 2023</span>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
+        <hr class="m-0" />
+        <section class="resume-section" id="publication">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Publications</h2>
 
+                <div class="publication-list">
 
-            <!--            <section class="resume-section" id="presentations">-->
-<!--                <div class="resume-section-content">-->
-<!--                    <h2 class="mb-4">Conference and Seminar Presentations</h2>-->
+                    <!-- ATVA -->
+                    <article class="publication-item mb-5">
+                        <h4 class="fw-semibold mb-1" style="text-transform: none;">
+                            Learning Broadcast Protocols with LeoParDS
+                        </h4>
+                        <p class="mb-2 text-black">
+                            <b>ATVA'24</b>
+                        </p>
+                        <p class="mb-2 text-body">
+                            Noa Izsak, Dana Fisman, and Swen Jacobs
+                        </p>
+                        <p class="mb-0" style="line-height: 1.7;">
+                            [<a href="/Learning%20Broadcast%20Protocols%20with%20LeoParDS-ATVA.pdf" target="_blank"><i class="fa fa-download"></i>&nbsp;Paper</a>]
+                            [<a href="javascript:void(0);" onclick="showLeoParDSCitation()"><i class="fas fa-quote-right"></i>&nbsp;Cite</a>]
+                            [<a href="https://github.com/Noa-Izsak/Learning-Broadcast-Protocols-with-LeoParDS" target="_blank"><i class="fab fa-github"></i>&nbsp;Code</a>]
+                            [<a href="https://link.springer.com/book/10.1007/978-3-031-78709-6" target="_blank">Proceedings</a>]
+                        </p>
+                    </article>
 
-<!--                    <div class="accordion" id="presentationsAccordion">-->
+                    <!-- AAAI -->
+                    <article class="publication-item mb-5">
+                        <h4 class="fw-semibold mb-1" style="text-transform: none;">
+                            Learning Broadcast Protocols
+                        </h4>
+                        <p class="mb-2 text-black">
+                            <b>AAAI'24</b>
+                        </p>
+                        <p class="mb-2 text-body">
+                            Dana Fisman, Noa Izsak, and Swen Jacobs
+                        </p>
+                        <p class="mb-0" style="line-height: 1.7;">
+                            [<a href="/Learning Broadcast Protocols AAAI'24  Vol. 38 No. 11.pdf" target="_blank"><i class="fa fa-download"></i>&nbsp;Paper</a>]
+                            [<a href="javascript:void(0);" onclick="showAAAI2024Citation()"><i class="fas fa-quote-right"></i>&nbsp;Cite</a>]
+                            [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/29089" target="_blank">Proceedings</a>]
+                        </p>
+                    </article>
 
-<!--                        &lt;!&ndash; 2025 &ndash;&gt;-->
-<!--                        <div class="accordion-item">-->
-<!--                            <h2 class="accordion-header" id="heading2025">-->
-<!--                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2025" aria-expanded="true" aria-controls="collapse2025">-->
-<!--                                    2025-->
-<!--                                </button>-->
-<!--                            </h2>-->
-<!--                            <div id="collapse2025" class="accordion-collapse collapse show" aria-labelledby="heading2025" data-bs-parent="#presentationsAccordion">-->
-<!--                                <div class="accordion-body">-->
-<!--                                    <ul class="fa-ul">-->
-<!--                                        <li class="mb-3">-->
-<!--                                            <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>-->
-<!--                                            <strong>Automata & WAN'25</strong> –-->
-<!--                                            <a href="https://automata-wan-2025.univ-lille.fr/" target="_blank">International Workshop on Cellular Automata and Discrete Complex Systems</a><br>-->
-<!--                                            <small class="text-muted">June 30 – July 4, Lille, France</small><br>-->
-<!--                                            <a href="/AUTOMATA-WAN/Learning%20Global%20Synchronous%20Protocols%20-%20A%20Broadcast%20Automata%20Perspective%20-%20WAN%20-%20pdf.pdf" class="btn btn-sm btn-outline-info mt-1" download>-->
-<!--                                                <i class="fa fa-download"></i> Presentation-->
-<!--                                            </a>-->
-<!--                                        </li>-->
-<!--                                        <li>-->
-<!--                                            <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>-->
-<!--                                            <strong>LeaLog-CSL'25</strong> –-->
-<!--                                            <a href="https://sites.google.com/view/lealog25" target="_blank">Workshop on Learning and Logic</a><br>-->
-<!--                                            <small class="text-muted">February 10, Amsterdam, Netherlands</small>-->
-<!--                                        </li>-->
-<!--                                    </ul>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
+                </div>
+            </div>
+        </section>
 
-<!--                        &lt;!&ndash; 2024 &ndash;&gt;-->
-<!--                        <div class="accordion-item">-->
-<!--                            <h2 class="accordion-header" id="heading2024">-->
-<!--                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2024" aria-expanded="false" aria-controls="collapse2024">-->
-<!--                                    2024-->
-<!--                                </button>-->
-<!--                            </h2>-->
-<!--                            <div id="collapse2024" class="accordion-collapse collapse" aria-labelledby="heading2024" data-bs-parent="#presentationsAccordion">-->
-<!--                                <div class="accordion-body">-->
-<!--                                    <ul class="fa-ul">-->
-<!--                                        <li class="mb-3">-->
-<!--                                            <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>-->
-<!--                                            <strong>IVD'24</strong> – Israel Verification Day<br>-->
-<!--                                            <small class="text-muted">December 19, Bar-Ilan University, Israel</small><br>-->
-<!--                                            <a href="/IVD/BP%20-%20IVD%20Slides%20-%20Final%20-%20slides.pdf" class="btn btn-sm btn-outline-info mt-1" download>-->
-<!--                                                <i class="fa fa-download"></i> Presentation-->
-<!--                                            </a>-->
-<!--                                        </li>-->
-<!--                                        <li class="mb-3">-->
-<!--                                            <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>-->
-<!--                                            <strong>ATVA'24</strong> –-->
-<!--                                            <a href="https://atva-conference.org/2024/" target="_blank">International Symposium on Automated Technology for Verification and Analysis</a><br>-->
-<!--                                            <small class="text-muted">October 21–24, Kyoto, Japan</small>-->
-<!--                                        </li>-->
-<!--                                        <li class="mb-3">-->
-<!--                                            <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>-->
-<!--                                            <strong>Highlights'24</strong> –-->
-<!--                                            <a href="https://highlights-conference.org/2024/program" target="_blank">Highlights of Logic, Games, and Automata</a><br>-->
-<!--                                            <small class="text-muted">September 16–20, Bordeaux, France (virtual)</small><br>-->
-<!--                                            <a href="#" class="btn btn-sm btn-outline-primary mt-1 open-popup">-->
-<!--                                                <i class="fa fa-play"></i> Watch Talk-->
-<!--                                            </a>-->
-<!--                                        </li>-->
-<!--                                        <li>-->
-<!--                                            <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>-->
-<!--                                            <strong>AAAI'24</strong> –-->
-<!--                                            <a href="https://aaai.org/aaai-24-conference/aaai-24-technical-program/" target="_blank">AAAI Conference on Artificial Intelligence</a><br>-->
-<!--                                            <small class="text-muted">February 20–27, Vancouver, Canada</small>-->
-<!--                                        </li>-->
-<!--                                    </ul>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
+        <hr class="m-0" />
+        <section class="resume-section" id="presentations">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Conference and Seminar Presentations</h2>
+                <div class="accordion" id="presentationsAccordion">
 
-<!--                        &lt;!&ndash; 2023 &ndash;&gt;-->
-<!--                        <div class="accordion-item">-->
-<!--                            <h2 class="accordion-header" id="heading2023">-->
-<!--                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2023" aria-expanded="false" aria-controls="collapse2023">-->
-<!--                                    2023-->
-<!--                                </button>-->
-<!--                            </h2>-->
-<!--                            <div id="collapse2023" class="accordion-collapse collapse" aria-labelledby="heading2023" data-bs-parent="#presentationsAccordion">-->
-<!--                                <div class="accordion-body">-->
-<!--                                    <ul class="fa-ul">-->
-<!--                                        <li>-->
-<!--                                            <span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span>-->
-<!--                                            <strong>Seminar on Formal Methods</strong> – Ben-Gurion University<br>-->
-<!--                                            <small class="text-muted">May 24, Be'er-Sheva, Israel</small>-->
-<!--                                        </li>-->
-<!--                                    </ul>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
+                    <!-- 2025 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading2025">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2025" aria-expanded="true" aria-controls="collapse2025">
+                                2025
+                            </button>
+                        </h2>
+                        <div id="collapse2025" class="accordion-collapse collapse show" aria-labelledby="heading2025" data-bs-parent="#presentationsAccordion">
+                            <div class="accordion-body">
+                                <ul class="fa-ul">
 
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </section>-->
+                                    <li class="mb-4">
+                                        <span class="fa-li"><i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i></span>
+                                        <a href="https://highlights-conference.org/2025/attend#program" target="_blank" rel="noopener" class="event-acronym" title="Highlights of Logic, Games, and Automata 2025">
+                                            Highlights'25
+                                        </a><br>
+                                        <div class="event-details">September 1–5, Saarbrücken, Germany</div>
+                                    </li>
 
+                                    <li class="mb-4">
+                                        <span class="fa-li"><i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i></span>
+                                        <a href="https://automata-wan-2025.univ-lille.fr/" target="_blank" rel="noopener" class="event-acronym" title="International Workshop on Cellular Automata and Discrete Complex Systems 2025">
+                                            Automata &amp; WAN'25
+                                        </a><br>
+                                        <a href="/AUTOMATA-WAN/Learning%20Global%20Synchronous%20Protocols%20-%20A%20Broadcast%20Automata%20Perspective%20-%20WAN%20-%20pdf.pdf" class="presentation-link" download>
+                                            <i class="fa fa-download" aria-hidden="true"></i> Presentation
+                                        </a>
+                                        <div class="event-details">June 30 – July 4, Lille, France</div>
+                                    </li>
+
+                                    <li>
+                                        <span class="fa-li"><i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i></span>
+                                        <a href="https://sites.google.com/view/lealog25" target="_blank" rel="noopener" class="event-acronym" title="Workshop on Learning and Logic, CSL 2025">
+                                            LeaLog-CSL'25
+                                        </a><br>
+                                        <div class="event-details">February 10, Amsterdam, Netherlands</div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2024 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading2024">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2024" aria-expanded="false" aria-controls="collapse2024">
+                                2024
+                            </button>
+                        </h2>
+                        <div id="collapse2024" class="accordion-collapse collapse" aria-labelledby="heading2024" data-bs-parent="#presentationsAccordion">
+                            <div class="accordion-body">
+                                <ul class="fa-ul">
+
+                                    <li class="mb-4">
+                                        <span class="fa-li"><i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i></span>
+                                        <a href="https://sites.google.com/view/ivd-2024" target="_blank" rel="noopener" class="event-acronym" title="Israel Verification Day">IVD'24</a><br>
+                                        <a href="/IVD/BP%20-%20IVD%20Slides%20-%20Final%20-%20slides.pdf" class="presentation-link" download>
+                                            <i class="fa fa-download" aria-hidden="true"></i> Presentation
+                                        </a>
+                                        <div class="event-details">December 19, Bar-Ilan University, Israel</div>
+                                    </li>
+
+                                    <li class="mb-4">
+                                        <span class="fa-li"><i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i></span>
+                                        <a href="https://atva-conference.org/2024/" target="_blank" rel="noopener" class="event-acronym" title="International Symposium on Automated Technology for Verification and Analysis 2024">
+                                            ATVA'24
+                                        </a><br>
+                                        <div class="event-details">October 21–24, Kyoto, Japan</div>
+                                    </li>
+
+                                    <li class="mb-4">
+                                        <span class="fa-li"><i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i></span>
+                                        <a href="https://highlights-conference.org/2024/program" target="_blank" rel="noopener" class="event-acronym" title="Highlights of Logic, Games, and Automata 2024">
+                                            Highlights'24
+                                        </a><br>
+                                        <!-- Load the popup HTML -->
+                                        <div id="popup-container"></div>
+                                        <!-- Include the JavaScript to handle the popup behavior -->
+                                        <script src="js/popup.js"></script>
+                                        <a href="#" class="open-popup">
+                                            <i class="fa fa-video" aria-hidden="true"></i> Watch My Talk
+                                        </a>
+                                        <div class="event-details">September 16–20, Bordeaux, France (virtual participation)</div>
+                                    </li>
+
+                                    <li>
+                                        <span class="fa-li"><i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i></span>
+                                        <a href="https://aaai.org/aaai-24-conference/aaai-24-technical-program/" target="_blank" rel="noopener" class="event-acronym" title="AAAI Conference on Artificial Intelligence 2024">
+                                            AAAI'24
+                                        </a><br>
+                                        <div class="event-details">February 20–27, Vancouver, Canada</div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2023 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading2023">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2023" aria-expanded="false" aria-controls="collapse2023">
+                                2023
+                            </button>
+                        </h2>
+                        <div id="collapse2023" class="accordion-collapse collapse" aria-labelledby="heading2023" data-bs-parent="#presentationsAccordion">
+                            <div class="accordion-body">
+                                <ul class="fa-ul">
+                                    <li>
+                                        <span class="fa-li"><i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i></span>
+                                        <span class="event-acronym" title="Seminar on Formal Methods, Ben-Gurion University of the Negev"> Seminar, BGU</span><br>
+                                        <div class="event-details">May 24, Be'er-Sheva, Israel</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
             <!-- Overlay to detect clicks outside the pop-up -->
             <div id="overlay" class="overlay"></div>
@@ -482,56 +383,44 @@
                 <div id="copy-success-msg" class="copy-success-msg"></div> <!-- Div for copy success message -->
             </div>
 
-<!--            <script src="scripts.js"></script>-->
-            <hr class="m-0" />
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Honors</h2>
-                    <div>
-                        <ul class="fa-ul mb-0">
-                            <li>
-                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                                <p class="lead md-5"> Zabey Award Recipient. <span class="info-bubble">?
-                                  <span class="tooltip-text">The Chaim Zabey award is granted yearly since 2001, by the faculty
-                                of Natural Sciences, to one graduate student with the most outstanding
-                                thesis, in each of the departments of Math, Computer Science and Physics.</span>
-                                </span></p>
-                                <br>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="fa-ul mb-0">
-                            <li>
-                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                                <p class="lead md-5"> Dean’s List Award Recipient, M.Sc. in Computer Science.</p>
-                                <br>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="fa-ul mb-0">
-                            <li>
-                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                                <p class="lead md-5"> Recipient of the Negev-Tzin Fellowship for New and Midway Outstanding Ph.D. Students.</p>
-                                <br>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="fa-ul mb-0">
-                            <li>
-                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                                <p class="lead md-5"> 2
-                                    <sup>nd</sup>
-                                    Place - Ben-Gurion University of the Negev - CS Department Poster Day 2023.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--in old_version.txt-->
-                </div>
-            </section>
-            <hr class="m-0" />
+        <hr class="m-0" />
+        <section class="resume-section" id="awards">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Awards & Honors</h2>
+
+                <ul class="fa-ul mb-0">
+                    <li class="mb-4">
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        <p class="lead mb-0">
+                            <b>Zabey Award</b> : Outstanding Graduate Thesis, Faculty of Natural Sciences, BGU.
+                        </p>
+                    </li>
+
+                    <li class="mb-4">
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        <p class="lead mb-0">
+                            <b>Dean’s List Award</b> : M.Sc. in Computer Science, BGU (2023).
+                        </p>
+                    </li>
+
+                    <li class="mb-4">
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        <p class="lead mb-0">
+                            <b>Negev–Tzin Fellowship</b> : for Outstanding Ph.D. Students.
+                        </p>
+                    </li>
+
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        <p class="lead mb-0">
+                            <b>2<sup>nd</sup> Place Poster Award</b> : BGU CS Department Poster Day (2023).
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <hr class="m-0" />
             <section class="resume-section" id="contact">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Contact Information</h2>
@@ -539,7 +428,7 @@
                         <li>
                             <span class="fa-li"><i class="fas fa-envelope" aria-hidden="true"></i></span>
                             <p class="lead mb-5">
-                                <a href="javascript:void(0);" onclick="openGmailWithFallback()" class="contact-link">Email</a>
+                                <a href="javascript:void(0);" onclick="openGmailWithFallback()" class="contact-link">noa.izsak@cispa.de</a>
                             </p>
                         </li>
                         <li>
@@ -578,4 +467,77 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
+    <style>
+        html {
+            font-size: clamp(15px, 1vw + 0.5rem, 18px);
+        }
+        body {
+            line-height: 1.6;
+        }
+        .resume-section-content {
+            max-width: 950px;
+            margin: inherit;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        /* Education spacing polish */
+        #education .education-item { margin-bottom: 2rem !important; }
+        #education h3.mb-0 { margin-bottom: .25rem !important; line-height: 1.25; }
+        #education .subheading { margin-bottom: .5rem !important; }
+        #education .resume-section-content { line-height: 1.55; }
+        #education .education-meta div { margin-bottom: .15rem; }                   /* advisors line */
+        #education .education-note {
+            margin-top: .35rem;
+            font-size: .95rem;
+            color: #6c757d;
+            max-width: 70ch;                                                          /* max width */
+        }
+        #education .flex-shrink-0 .text-primary { white-space: nowrap; }            /*dates in same line */
+        @media (min-width: 768px){
+            #education .education-item { gap: .5rem; }                                /* column spacing */
+        }
+
+
+        /* Publications layout improvements */
+        #publication .publication-item {
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        #publication .publication-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        #publication .publication-item h4 {
+            line-height: 1.35;
+            color: #212529;
+            margin-bottom: 0.25rem;
+            text-transform: none;
+        }
+        #publication .publication-item p.text-muted {
+            margin-bottom: 0.35rem;
+        }
+        #publication .publication-item {
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e6e6e6;
+        }
+        #publication .publication-item:last-child {
+            border-bottom: none;
+        }
+        #publication .publication-item a {
+            text-decoration: none;
+        }
+        #publication .publication-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Awards spacing & readability */
+        #awards p.lead {
+            line-height: 1.6;
+        }
+
+    </style>
+
 </html>
