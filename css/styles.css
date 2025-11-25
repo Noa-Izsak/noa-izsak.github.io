@@ -2237,7 +2237,7 @@ progress {
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
   --bs-accordion-active-color: #021121;
-  --bs-accordion-active-bg: #cfe1f3;
+  --bs-accordion-active-bg: #d2e1f5;
 }
 
 .accordion-button {
@@ -2246,7 +2246,8 @@ progress {
   align-items: center;
   width: 100%;
   padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
-  font-size: 1.1rem;
+  font-size: 1.35rem;
+  font-weight: bolder;
   color: var(--bs-accordion-btn-color);
   text-align: left;
   background-color: var(--bs-accordion-btn-bg);
@@ -2287,6 +2288,7 @@ progress {
 }
 .accordion-button:hover {
   z-index: 2;
+  background-color: var(--bs-accordion-active-bg);
 }
 .accordion-button:focus {
   z-index: 3;
@@ -2401,7 +2403,7 @@ progress {
   --bs-pagination-hover-border-color: #dee2e6;
   --bs-pagination-focus-color: var(--bs-link-hover-color);
   --bs-pagination-focus-bg: #e9ecef;
-  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(189, 93, 56, 0.25);
+  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgb(3, 16, 110);
   --bs-pagination-active-color: #fff;
   --bs-pagination-active-bg: #007ea7;
   --bs-pagination-active-border-color: #007ea7;
@@ -2828,17 +2830,21 @@ progress {
 }
 
 .list-group-item-primary {
-  color: #713822;
+  /*color: #713822;*/
+  color: #03106b;
   background-color: #f2dfd7;
 }
 .list-group-item-primary.list-group-item-action:hover, .list-group-item-primary.list-group-item-action:focus {
-  color: #713822;
+  /*color: #713822;*/
+  color: #03106b;
   background-color: #dac9c2;
 }
 .list-group-item-primary.list-group-item-action.active {
   color: #fff;
-  background-color: #713822;
-  border-color: #713822;
+  /*background-color: #713822;*/
+  background-color: #03106b;
+  /*border-color: #713822;*/
+  border-color: #03106b;
 }
 
 .list-group-item-secondary {
@@ -5745,13 +5751,18 @@ progress {
   font-weight: 400 !important;
 }
 
-.fw-bold {
-  font-weight: 700 !important;
+.fw-semisemibold {
+  font-weight: 505 !important;
 }
 
 .fw-semibold {
   font-weight: 600 !important;
 }
+
+.fw-bold {
+  font-weight: 700 !important;
+}
+
 
 .fw-bolder {
   font-weight: bolder !important;
